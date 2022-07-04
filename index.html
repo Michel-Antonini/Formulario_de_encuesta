@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Survey Form</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Contact us -->
+    <div class="contact">
+
+        <!-- Contents -->
+        <div class="content_description">
+            <h1 id="title">Work with us.</h1>
+            <p id="description">Join our community and be part of this great family!!</p>
+        </div>
+
+        <!-- Container Form -->
+        <div class="container_form">
+
+            <!-- Form -->
+            <form id="survey-form" action="https://register-demo.freecodecamp.org">
+
+                <!-- Personal information -->
+                <fieldset>
+                    <h2 id="personal_title">Personal information:</h2>
+                    <label id="name-label" class="name">Name<span>*</span> <input id="name" type="text" name="name"
+                            placeholder="Enter your name...." title="Please, enter your Name!!" required /></label>
+                    <label id="email-label" class="email">Email<span>*</span> <input id="email" type="email"
+                            name="email" placeholder="Enter your E-mail...." title="Please, enter a valid E-mail!!"
+                            required /></label>
+                    <label id="number-label" class="age">Age<span>*</span> <input id="number" type="number" name="age"
+                            placeholder="Enter your age" title="Enter your Age...." min="18" max="45"
+                            required /></label>
+                </fieldset>
+
+                <!-- Status -->
+                <fieldset>
+                    <h2 id="learning_state">Learning state:</h2>
+                    <label>
+                        What is your current learning status?
+                        <select id="dropdown" name="select">
+                            <option value="">Please, select an option</option>
+                            <option value="condition">Student</option>
+                            <option value="condition">Autodidact</option>
+                            <option value="condition">Beginner level</option>
+                            <option value="condition">Advanced level</option>
+                            <option value="condition">None</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <!-- Time availability -->
+                <fieldset>
+                    <h2 id="time_availability">Time availability:</h2>
+                    <label>
+                        Indicate your time availability
+                        <label><input type="radio" name="recommendation" value="time_availability"
+                                class="aligned custom-color" /> Day</label>
+                        <label><input type="radio" name="recommendation" value="time_availability"
+                                class="aligned custom-color" /> Night</label>
+                        <label><input type="radio" name="recommendation" value="time_availability"
+                                class="aligned custom-color" /> Evening</label>
+                        <label><input type="radio" name="recommendation" value="time_availability"
+                                class="aligned custom-color" /> Morning</label>
+                        <label><input type="radio" name="recommendation" value="time_availability"
+                                class="aligned custom-color" /> Absolute freedom</label>
+                    </label>
+                </fieldset>
+
+                <!-- Interest -->
+                <fieldset>
+                    <label>
+                        <h2 id="interest">Interest:</h2>
+                        Why would you like to work with us?
+                        <select id="dropdown" name="select">
+                            <option value="">Please, select an option</option>
+                            <option value="like">Challenge</option>
+                            <option value="like">Project</option>
+                            <option value="like">Race</option>
+                            <option value="like">Passion</option>
+                            <option value="like">Community</option>
+                            <option value="like">Other reasons</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <!-- Experience -->
+                <fieldset>
+                    <label>
+                        <h2 id="experience">Experience:</h2>
+                        I have experience in (Check that apply)
+                        <label><input type="checkbox" name="experience" value="experience"
+                                class="aligned custom-color" /> Frontend</label>
+                        <label><input type="checkbox" name="experience" value="experience"
+                                class="aligned custom-color" /> Backend</label>
+                        <label><input type="checkbox" name="experience" value="experience"
+                                class="aligned custom-color" /> Digital marketing</label>
+                        <label><input type="checkbox" name="experience" value="experience"
+                                class="aligned custom-color" /> SEO</label>
+                        <label><input type="checkbox" name="experience" value="experience"
+                                class="aligned custom-color" /> Databases</label>
+                        <label><input type="checkbox" name="experience" value="experience"
+                                class="aligned custom-color" /> Video edition</label>
+                        <label><input type="checkbox" name="experience" value="experience"
+                                class="aligned custom-color" /> HTML</label>
+                        <label><input type="checkbox" name="experience" value="experience"
+                                class="aligned custom-color" /> CSS</label>
+                        <label><input type="checkbox" name="experience" value="experience"
+                                class="aligned custom-color" /> Java Script</label>
+                        <label><input type="checkbox" name="experience" value="experience"
+                                class="aligned custom-color" /> Python</label>
+                        <label><input type="checkbox" name="experience" value="experience"
+                                class="aligned custom-color" /> None</label>
+                        <label><input type="checkbox" name="experience" value="experience"
+                                class="aligned custom-color" /> Others</label>
+                    </label>
+                </fieldset>
+
+                <!-- Contact Us -->
+                <fieldset>
+                    <h2 id="contact_us">Contact Us</h2>
+                    <label>If you have completed courses, please indicate them!!<span>*</span>
+                        <textarea name="bio" rows="10" cols="30" placeholder="Contact us...." required></textarea>
+                    </label>
+                </fieldset>
+
+                <input id="submit" type="submit" value="Send" />
+
+            </form>
+
+            <!-- Caveat -->
+            <div class="footer_form">
+                <p>WARNING: All fields marked with (<span>*&nbsp;</span>) are required!!</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
